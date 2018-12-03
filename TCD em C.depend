@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1543171293 source:c:\users\gabriel gonçalves\desktop\tcd\tcd em c\main.c
+	<stdio.h>
+	<stdlib.h>
+	"./dataType.h"
+	"./menu.c"
+
+1543171382 c:\users\gabriel gonçalves\desktop\tcd\tcd em c\datatype.h
+
+1543172322 c:\users\gabriel gonçalves\desktop\tcd\tcd em c\menu.c
+	"./dataType.h"
+	"./menu.h"
+
+1543170074 c:\users\gabriel gonçalves\desktop\tcd\tcd em c\menu.h
+	"./dataType.h"
+
