@@ -21,6 +21,8 @@ typedef struct
   
 } parties;
 
+parties partyVet[30];
 
+int vetorCont;
 
 #endif

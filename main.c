@@ -2,16 +2,10 @@
 #include <stdlib.h>
 #include "./dataType.h"
 #include "./menu.c"
+#include "./cadastro.c"
 #include <ctype.h>
-// #include <stdio.c> // a libc vai definir essas funções
+#include "./pesquisarEvento.c"
 
-// CLion
-
-// gcc -c main.c -o main.o
-// gcc -c helloWorld.c -o helloWorld.o
-// gcc main.o helloWorld.o -o helloWorld
-
-// https://www.youtube.com/watch?v=DIw02CaEusY
 
 int main()
 {
