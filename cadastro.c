@@ -50,8 +50,10 @@ void cadastrar(parties party)
     printf("Nonexistent option\n\n");
     goto back1;
   }
-  else
+  else if (partyVet[i].skol == 1)
   {
+    printf("Quantas unidades?\n");
+    scanf("%d%*c", &partyVet[i].uSklol);
     printf("\n");
   }
 
@@ -66,8 +68,10 @@ void cadastrar(parties party)
     printf("Nonexistent option\n\n");
     goto back2;
   }
-  else
+  else if (partyVet[i].devassa == 1)
   {
+    printf("Quantas unidades?\n");
+    scanf("%d%*c", &partyVet[i].uDevassa);
     printf("\n");
   }
 
@@ -82,8 +86,10 @@ void cadastrar(parties party)
     printf("Nonexistent option\n\n");
     goto back3;
   }
-  else
+  else if (partyVet[i].subzero == 1)
   {
+    printf("Quantas unidades?\n");
+    scanf("%d%*c", &partyVet[i].uSubzero);
     printf("\n");
   }
 
@@ -98,8 +104,10 @@ void cadastrar(parties party)
     printf("Nonexistent option\n\n");
     goto back4;
   }
-  else
+  else if (partyVet[i].brahma == 1)
   {
+    printf("Quantas unidades?\n");
+    scanf("%d%*c", &partyVet[i].uBrahma);
     printf("\n");
   }
 

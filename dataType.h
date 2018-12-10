@@ -18,6 +18,10 @@ typedef struct
   int brahma;
   int subzero;
   int devassa;
+  int uSklol;
+  int uBrahma;
+  int uSubzero;
+  int uDevassa;
   
 } parties;
 
