@@ -27,13 +27,16 @@ printf("ID da festa: ");
 printf("%d", partyVet[i].partyId);
 printf("\n");
 printf("Custo da festa: ");
-printf("%f", partyVet[i].costOrg);
+printf("%.2f", partyVet[i].costOrg);
 printf("\n");
 printf("Investimento: ");
-printf("%f", partyVet[i].invest);
+printf("%.2f", partyVet[i].invest);
 printf("\n");
 printf("Quantidade de ingressos: ");
 printf("%d", partyVet[i].quantIng);
+printf("\n");
+printf("Preço de cada ingresso: ");
+printf("%.2f", partyVet[i].costIng);
 
 printf("\n");
 printf("\n");

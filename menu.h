@@ -21,6 +21,7 @@ void menu();
 int procurar();
 void pesquisarEvento();
 int getLastId();
+float calcValor();
 
 
 #endif

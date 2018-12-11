@@ -8,6 +8,7 @@ typedef struct
   char data[50];
   int quantIng;
   float costOrg;
+  float costIng;
   float invest;
   int partyId;
   float money;

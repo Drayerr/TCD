@@ -14,7 +14,7 @@ void cadastrar(parties party)
   i = vetorCont;
 
   printf("Nome do evento\n");
-  scanf("%s*c", &partyVet[i].partyName);
+  scanf("%s%*c", &partyVet[i].partyName);
 
   printf("Local do evento\n");
   scanf("%s%*c", &partyVet[i].local);
@@ -144,6 +144,7 @@ void cadastrar(parties party)
   {
     printf("-------------------Festa cadastrada!-------------------\n");
     vetorCont += 1;
+    partyVet[i].costIng = calcValor(partyVet[i]);
     printf("\n");
     system("pause");
     printf("\n");

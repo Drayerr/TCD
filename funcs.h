@@ -10,5 +10,6 @@ void menu();
 void pesquisarEvento();
 int procurar();
 int getLastId();
+float calcValor();
 
 #endif
