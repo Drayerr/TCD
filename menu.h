@@ -21,8 +21,10 @@ void menu();
 int procurar();
 void pesquisarEvento();
 int getLastId();
-float calcValor();
-
+void calcValor();
+void lucroEvento();
+void vendaIngresso();
+void resulGeral();
 
 #endif
 

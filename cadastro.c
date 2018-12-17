@@ -8,7 +8,7 @@ void cadastrar(parties party)
 {
   int i ;
   system("cls");
-  // getLastId(); //CHAMANDO A FUNÇÃO QUE ACHA O ULTIMO ID AQUI
+  // getLastId();// Não vou usar mais
   printf("-------------------Cadastro de Evento-------------------\n");
 
   i = vetorCont;
@@ -27,9 +27,6 @@ void cadastrar(parties party)
 
   printf("Custo da organização\n");
   scanf("%f%*c", &partyVet[i].costOrg);
-
-  printf("Investimento\n");
-  scanf("%f%*c", &partyVet[i].invest);
 
   printf("Quantos ingressos serão colocados à venda?\n");
   scanf("%d%*c", &partyVet[i].quantIng);
@@ -53,7 +50,7 @@ void cadastrar(parties party)
   else if (partyVet[i].skol == 1)
   {
     printf("Quantas unidades?\n");
-    scanf("%d%*c", &partyVet[i].uSklol);
+    scanf("%d%*c", &partyVet[i].uSkol);
     printf("\n");
   }
 
@@ -128,26 +125,12 @@ void cadastrar(parties party)
     printf("\n");
   }
 
-  back6:
-  printf("Qual será o tipo da festa? \n");
-  printf("Popular (1) \n");
-  printf("Normal (2) \n");
-  printf("Especial (3) \n");
-  scanf("%d%*c", &partyVet[i].partyType);
-  if (partyVet[i].partyType < 1 || partyVet[i].partyType > 3)
-  {
-    printf("Error!\n");
-    printf("Nonexistent option\n\n");
-    goto back6;
-  }
-  else
-  {
+  
     printf("-------------------Festa cadastrada!-------------------\n");
     vetorCont += 1;
-    partyVet[i].costIng = calcValor(partyVet[i]);
     printf("\n");
     system("pause");
-    printf("\n");
-  }
-  menu();
+    calcValor(partyVet[i].partyId);
+    
+    
 }

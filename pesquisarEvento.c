@@ -9,11 +9,12 @@ int partyId;
 
 system("cls");
 
-printf("-------------------Pesquisar Evento-------------------\n");
+printf("-------------------Pesquisar Evento-------------------\n\n");
 printf("Digite o número da festa que deseja pesquisar\n");
 scanf("%d", &partyId);
 i = procurar(partyId);
 
+if(i != -1){
 printf("Nome da festa: ");
 printf("%s", partyVet[i].partyName);
 printf("\n");
@@ -29,18 +30,22 @@ printf("\n");
 printf("Custo da festa: ");
 printf("%.2f", partyVet[i].costOrg);
 printf("\n");
-printf("Investimento: ");
-printf("%.2f", partyVet[i].invest);
-printf("\n");
 printf("Quantidade de ingressos: ");
 printf("%d", partyVet[i].quantIng);
 printf("\n");
-printf("Preço de cada ingresso: ");
-printf("%.2f", partyVet[i].costIng);
+printf("Preço do ingresso normal: ");
+printf("%.2f", partyVet[i].costIng1);
+printf("\n");
+printf("Preço do ingresso popular: ");
+printf("%.2f", partyVet[i].costIng2);
+printf("\n");
+printf("Preço do ingresso especial: ");
+printf("%.2f", partyVet[i].costIng3);
+printf("\n");
 
 printf("\n");
 printf("\n");
-
+}
 system("pause");
 printf("\n");
 

@@ -3,13 +3,16 @@
 
 typedef struct
 {
-  char partyName[30];
+  char partyName[50];
   char local[50];
   char data[50];
   int quantIng;
-  float costOrg;
+  float costOrg;    //remover depois
   float costIng;
-  float invest;
+  float costIng1;
+  float costIng2;
+  float costIng3;
+  float invest;     //remover depois
   int partyId;
   float money;
   int drinks;
@@ -19,7 +22,7 @@ typedef struct
   int brahma;
   int subzero;
   int devassa;
-  int uSklol;
+  int uSkol;
   int uBrahma;
   int uSubzero;
   int uDevassa;

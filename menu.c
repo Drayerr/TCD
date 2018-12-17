@@ -3,12 +3,11 @@
 #include <ctype.h>
 
 
-
 parties party;
 
 void menu()
 {
-
+  back:
   system("cls");
   int menuSelect = 0;
 
@@ -36,25 +35,27 @@ void menu()
     break;
 
   case 3:
-    system("cls");
-    printf("-------------------Ingressos Vendidos-------------------\n");
+    vendaIngresso(party);
+
     break;
 
   case 4:
-    system("cls");
-    printf("-------------------Resultado por Evento-------------------\n");
+    lucroEvento(party);
+
     break;
 
   case 5:
-    system("cls");
-    printf("-------------------Exibir Resultado Geral-------------------\n");
+    resulGeral();
+
     break;
 
   case 6:
     system("exit");
     break;
-  }
 
+  default:
+    goto back;
+  }
 
   // ...
 }

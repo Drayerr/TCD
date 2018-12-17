@@ -7,6 +7,6 @@ extern parties party;
 
 void cadastrar(parties party);
 void menu();
-float calcValor();
+void calcValor();
 
 #endif
