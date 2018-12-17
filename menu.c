@@ -1,13 +1,14 @@
 #include "./dataType.h"
 #include "./menu.h"
 #include <ctype.h>
-
-
+#include <locale.h>
 parties party;
 
 void menu()
 {
-  back:
+  setlocale(LC_ALL, "");
+  back :
+
   system("cls");
   int menuSelect = 0;
 
@@ -31,7 +32,7 @@ void menu()
 
   case 2:
     pesquisarEvento(party);
-    
+
     break;
 
   case 3:

@@ -2,13 +2,13 @@
 #include "./menu.h"
 #include <ctype.h>
 #include "./funcs.c"
-
+#include <locale.h>
 
 void cadastrar(parties party)
 {
-  int i ;
+  int i;
   system("cls");
-  // getLastId();// N√£o vou usar mais
+  // getLastId();// N„o vou usar mais
   printf("-------------------Cadastro de Evento-------------------\n");
 
   i = vetorCont;
@@ -25,18 +25,17 @@ void cadastrar(parties party)
   printf("ID da festa\n");
   scanf("%d%*c", &partyVet[i].partyId);
 
-  printf("Custo da organiza√ß√£o\n");
+  printf("Custo da organizaÁ„o\n");
   scanf("%f%*c", &partyVet[i].costOrg);
 
-  printf("Quantos ingressos ser√£o colocados √†¬†venda?\n");
+  printf("Quantos ingressos ser„o colocados ‡†venda?\n");
   scanf("%d%*c", &partyVet[i].quantIng);
-  
 
   // Escolhendo as bebidas
-  printf("Quais bebidas ter√£o na festa? \n");
-  printf("Entre com (1) para sim e (2) para n√£o \n\n");
+  printf("Quais bebidas ter„o na festa? \n");
+  printf("Entre com (1) para sim e (2) para n„o \n\n");
 
-  back1: //BACKSSSS
+back1: //BACKSSSS
 
   printf("Skol\n");
   printf("R$ 03,00\n");
@@ -54,7 +53,7 @@ void cadastrar(parties party)
     printf("\n");
   }
 
-  back2: //BACKKKK
+back2: //BACKKKK
 
   printf("Devassa\n");
   printf("R$ 03,50\n");
@@ -72,7 +71,7 @@ void cadastrar(parties party)
     printf("\n");
   }
 
-  back3: //BACCK3
+back3: //BACCK3
 
   printf("Subzero\n");
   printf("R$ 02,50\n");
@@ -90,7 +89,7 @@ void cadastrar(parties party)
     printf("\n");
   }
 
-  back4: //BACK4
+back4: //BACK4
 
   printf("Brahma\n");
   printf("R$ 03,50\n");
@@ -108,9 +107,9 @@ void cadastrar(parties party)
     printf("\n");
   }
 
-  // Finaliza√ß√£o, escolhendo se a festa √© open bar e o tipo dela
-  back5:
-  printf("A festa ser√° normal ou open bar\n");
+// FinalizaÁ„o, escolhendo se a festa È open bar e o tipo dela
+back5:
+  printf("A festa ser· normal ou open bar\n");
   printf("Normal (1)\n");
   printf("Open Bar (2)\n");
   scanf("%d%*c", &partyVet[i].barType);
@@ -125,12 +124,9 @@ void cadastrar(parties party)
     printf("\n");
   }
 
-  
-    printf("-------------------Festa cadastrada!-------------------\n");
-    vetorCont += 1;
-    printf("\n");
-    system("pause");
-    calcValor(partyVet[i].partyId);
-    
-    
+  printf("-------------------Festa cadastrada!-------------------\n");
+  vetorCont += 1;
+  printf("\n");
+  system("pause");
+  calcValor(partyVet[i].partyId);
 }
