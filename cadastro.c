@@ -39,6 +39,7 @@ back1: //BACKSSSS
 
   printf("Skol\n");
   printf("R$ 03,00\n");
+  printf("Graduação alcoólica 4,7%vol\n");
   scanf("%d%*c", &partyVet[i].skol);
   if (partyVet[i].skol < 1 || partyVet[i].skol > 2)
   {
@@ -57,6 +58,7 @@ back2: //BACKKKK
 
   printf("Devassa\n");
   printf("R$ 03,50\n");
+  printf("Graduação alcoólica 4,8%vol\n");
   scanf("%d%*c", &partyVet[i].devassa);
   if (partyVet[i].devassa < 1 || partyVet[i].devassa > 2)
   {
@@ -75,6 +77,7 @@ back3: //BACCK3
 
   printf("Subzero\n");
   printf("R$ 02,50\n");
+  printf("Graduação alcoólica 4,6%vol\n");
   scanf("%d%*c", &partyVet[i].subzero);
   if (partyVet[i].subzero < 1 || partyVet[i].subzero > 2)
   {
@@ -93,6 +96,7 @@ back4: //BACK4
 
   printf("Brahma\n");
   printf("R$ 03,50\n");
+  printf("Graduação alcoólica 5,0%vol\n");
   scanf("%d%*c", &partyVet[i].brahma);
   if (partyVet[i].brahma < 1 || partyVet[i].brahma > 2)
   {
